@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DOM操作入門</title>
+</head>
+<body>
+  <ul style="list-style-type: none">
+    <li class="list">DIVE</li>
+    <li class="list">INTO</li>
+    <li class="list">CODE</li>
+  </ul>
+  <ul style="list-style-type: none">
+    <li class="list2">DIVER</li>
+    <li class="list2">STUDY</li>
+  </ul>
+  <input type="button" value="表示" onclick="classview()">
+  <input type="button" value="非表示" onclick="classhide()">
+  <script>
+    const classview = function(){
+      const lists = document.getElementsByClassName('list');
+      for (let i = 0; i < lists.length; i++) {
+        lists[i].style.display = "block";
+      }
+    }
+    const classhide = function(){
+      const lists = document.getElementsByClassName('list');
+      for (let i = 0; i < lists.length; i++) {
+        lists[i].style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
