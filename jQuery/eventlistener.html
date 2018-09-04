@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DOM操作入門</title>
+</head>
+<body>
+  <ul style="list-style-type: none">
+    <li class="list">DIVE</li>
+    <li class="list">INTO</li>
+    <li class="list">CODE</li>
+  </ul>
+  <ul style="list-style-type: none">
+    <li class="list2">DIVER</li>
+    <li class="list2">STUDY</li>
+  </ul>
+  <form>
+      <input type="text" name="" id="name" />
+      <input value="送信" id="btn"/>
+    </form>
+  <script>
+      const target=document.getElementById('btn');
+      target.addEventListener('click',function(){
+          const form=document.getElementById('name');
+          console.log(form.value + 'クリックされました');
+      },false)
+  </script>
+</body>
+</html>
